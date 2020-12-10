@@ -1,6 +1,10 @@
 <?php
 /* Includes */
 include "ProductController.php";
+include "debug.php";
+
+/* Inicia a sessão */
+session_start();
 
 /* Carrinho */
 function productExistsInCart($id){

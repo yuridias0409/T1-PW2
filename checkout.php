@@ -1,8 +1,8 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
-
         <?php include "includes/head.php"?>
         <title>E-SHOP HTML Template</title>
     </head>
@@ -147,7 +147,7 @@
                                 <div class="section-title">
                                     <h3 class="title">Order Review</h3>
                                 </div>
-                                <?php include 'includes/tableItemsCheckout.php' ?>
+                                <?php include 'includes/itensCheckout.php' ?>
                                 <div class="pull-right">
                                     <button class="primary-btn">Place Order</button>
                                 </div>

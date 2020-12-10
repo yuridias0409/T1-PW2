@@ -1,13 +1,15 @@
 <?php
     include "codigo/ProductController.php";
     include "codigo/debug.php";
+    session_start();
 
     $products;
-    if(isset($_GET['sort']))
+    if(isset($_GET['sort'])){
         $products = getProductsSortedByPrice($_GET['sort']);
-    else
+    }   else{
         $products = getAllProducts();
-    
+    }
+
     $qtdProd = count($products);
 ?>
 <!DOCTYPE html>

@@ -1,13 +1,16 @@
 <?php
     include "codigo/ProductController.php";
     $products;
-    if(isset($_GET['sort']))
+    if(isset($_GET['sort'])){
         $products = getProductsSortedByPrice();
-    else
-        $products = getProductByType("ram");
+    }   else{
+        $products = getProductByType("vga");
+    }
+
     $qtdProd = count($products);
+
+    session_start();
 ?>
-<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 

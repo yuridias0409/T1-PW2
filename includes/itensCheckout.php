@@ -13,23 +13,23 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($_SESSION['carrinho'] as $key => $item):?>
+        <?php foreach ($_SESSION['carrinho'] as $key => $produto):?>
         <tr>
-            <td class="thumb"><img src="<?php echo $item['imagem'] ?>" alt=""></td>
+            <td class="thumb"><img src="<?php echo $produto['imagem'] ?>" alt=""></td>
             <td class="details">
-                <a href="#"><?php echo $item['nome'] ?></a>
+                <a href="#"><?php echo $produto['nome'] ?></a>
                 <ul>
                     <li><span>Size: XL</span></li>
                     <li><span>Color: Camelot</span></li>
                 </ul>
             </td>
-            <td class="price text-center"><strong>$<?php echo $item['preco'] ?></strong>
+            <td class="price text-center"><strong>$<?php echo $produto['preco'] ?></strong>
             </td>
             <td class="qty text-center"><input class="input" type="number"
-                    value="<?php echo $item['qty'] ?>">
+                    value="<?php echo $produto['qty'] ?>">
             </td>
             <td class="total text-center"><strong
-                    class="primary-color">$<?php echo ($item['preco']*$item['qty']) ?></strong>
+                    class="primary-color">$<?php echo ($produto['preco']*$produto['qty']) ?></strong>
             </td>
             <td class="text-right"><button class="main-btn icon-btn"><i
                         class="fa fa-close"></i></button></td>

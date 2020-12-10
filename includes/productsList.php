@@ -2,7 +2,7 @@
 <!-- Product Single -->
 <div class="col-md-4 col-sm-6 col-xs-6 div-produto <?php echo $products[$i]["marca"]?>">
     <div class="product product-single">
-        <a href="product-page.php?<?php echo 'productType='.$products[$i]["tipo"].'&productId='.$products[$i]["id"]?>">
+        <a href="productPage.php?<?php echo 'productType='.$products[$i]["tipo"].'&productId='.$products[$i]["id"]?>">
             <div class="product-thumb">
                 <div class="product-label">
                     <span>New</span>
@@ -25,7 +25,7 @@
                     <i class="fa fa-star-o empty"></i>
                 </div>
                 <h2 class="product-name"><a
-                        href="product-page.php?<?php echo 'productType='.$products[$i]["tipo"].'&productId='.$products[$i]["id"]?>"><?php echo $products[$i]["nome"]?></a>
+                        href="productPage.php?<?php echo 'productType='.$products[$i]["tipo"].'&productId='.$products[$i]["id"]?>"><?php echo $products[$i]["nome"]?></a>
                 </h2>
                 <div class="product-btns">
                     <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
